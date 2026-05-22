@@ -23,6 +23,8 @@ class NotificationService {
         builder: (context) => NotificationPage(
           title: event.notification.title ?? '',
           description: event.notification.body ?? '',
+          largeIconURL: event.notification.largeIcon ?? '',
+          bigPictureURL: event.notification.bigPicture ?? '',
         ),
       ),
     );
